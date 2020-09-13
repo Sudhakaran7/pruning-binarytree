@@ -1,0 +1,80 @@
+We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
+Return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
+(Recall that the subtree of a node X is X, plus every node that is a descendant of X.)
+For example,
+https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/06/1028_2.png
+
+Input Description:
+First line contains, n the size of values in binary tree.
+Second line contains, n elements of inputs for binary tree.
+
+Output Description:
+Print the same tree where every subtree (of the given tree) not containing a 1 has been removed.
+
+Sample Input:
+4
+1 0 0 1
+
+Sample Output:
+    1
+   /
+  0
+ /
+1
+
+Explanation:
+Only the red nodes satisfy the property "every subtree not containing a 1".
+The diagram on the right represents the answer.(diagram in question).
+
+Sample Input:
+7
+1 0 1 0 0 0 1
+
+Sample Output:
+1
+ \
+  1
+   \
+    1
+
+Sample Input:
+4
+0 1 1 1
+
+Sample Output:
+    0
+   / \
+  1   1
+ /
+1
+
+Sample Input:
+3
+0 0 1
+
+Sample Output:
+0
+ \
+  1
+
+Sample Input:
+6
+1 1 0 0 1 0
+
+Sample Output:
+  __1
+ /
+1
+ \
+  1
+
+Sample Input:
+4
+0 1 0 1
+
+Sample Output:
+    0
+   /
+  1
+ /
+1
